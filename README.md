@@ -42,39 +42,39 @@ smart-expense-categorizer/
 
 ## Installation
 
-# 1.Clone the repository
+## 1.Clone the repository
 ```bash
 git clone https://github.com/yourusername/smart-expense-categorizer.git
 cd smart-expense-categorizer
 ```
 
-# 2.Create a virtual environment
+## 2.Create a virtual environment
 ```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
 # source venv/bin/activate  # Linux / Mac
 ```
 
-# 3.Install dependencies
+## 3.Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 ## Usage
 
-# 1.Train the model
+## 1.Train the model
 ```bash
 python train.py
 ```
 
 This will train a Logistic Regression model on your transaction dataset and save it in models/model.joblib.
 
-# 2.Test predictions via terminal
+## 2.Test predictions via terminal
 ```bash
 python infer.py "Swiggy order 250" "Uber ride 100" "Electricity bill 1200"
 ```
 Output includes predicted category and probabilities for each class.
 
-# 3.Start the Flask API
+## 3.Start the Flask API
 ```bash
 python app.py
 ```
@@ -96,7 +96,7 @@ Response:
   "classes": ["Bills", "Charity", "Food", "Travel"]
 }
 
-# 4.Launch Streamlit frontend
+## 4.Launch Streamlit frontend
 ```bash
 streamlit run streamlit_app.py
 ```
