@@ -1,0 +1,9 @@
+venv/
+models/
+__pycache__/
+.vscode/
+*.pycvenv/
+__pycache__/
+*.pyc
+models/
+*.csv  # optional: if you don't want to upload dataset
